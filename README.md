@@ -1,2 +1,2 @@
 # hangprinter
-Hangprinter project
+The Hangprinter project
