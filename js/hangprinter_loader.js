@@ -60,6 +60,7 @@ function init() {
 		//mesh.receiveShadow = true;
 
 		scene.add( mesh );
+		document.getElementById('preloader').remove();
 
 
 	} );
@@ -76,7 +77,6 @@ function init() {
 		//mesh.receiveShadow = true;
 
 		scene.add( mesh2 );
-		document.getElementById('preloader').remove();
 
 	} );
 
