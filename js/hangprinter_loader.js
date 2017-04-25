@@ -61,6 +61,7 @@ function init() {
 
 		scene.add( mesh );
 
+
 	} );
 
 	loader.load( 'models/babel.stl', function ( geometry2 ) {
@@ -75,6 +76,7 @@ function init() {
 		//mesh.receiveShadow = true;
 
 		scene.add( mesh2 );
+		document.getElementById('preloader').remove();
 
 	} );
 
