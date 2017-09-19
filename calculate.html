@@ -189,9 +189,9 @@ $(document).ready(function(){
       var f = parseFloat($('#f').val());
       var A_y = -a;
       var B_y = (s * s - b * b - a * a) / (2 * a);
-      var B_x = Math.sqrt(s * s - (a+B_y)*(a+B_y));
+      var B_x = Math.sqrt(Math.abs(s * s - (a+B_y)*(a+B_y)));
       var C_y = (f * f - c * c - a * a) / (2 * a);
-      var C_x = -Math.sqrt(f * f - Math.pow(a + C_y, 2));
+      var C_x = -Math.sqrt(Math.abs(f * f - Math.pow(a + C_y, 2)));
       var D_z = d;
       var ANCHOR_A_Y = parseFloat(-(a - 59.80)).toFixed(2);
       var ANCHOR_B_X = parseFloat(B_x - (59.80 * Math.sqrt(3) / 2)).toFixed(2);
