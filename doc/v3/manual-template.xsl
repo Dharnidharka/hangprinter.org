@@ -44,34 +44,35 @@
         <div class="masthead clearfix">
           <div class="inner">
             <h3 class="masthead-brand">
-              <a href="index.html" style="text-decoration: none; color: #000;">
+              <a href="../../" style="text-decoration: none; color: #000;">
                 <img src="https://hangprinter.org/images/logo1.png" style="height: 50px; width: 50px; margin-top: -15px; margin-right: 10px;" />Hangprinter
               </a>
             </h3>
             <nav>
               <ul class="nav masthead-nav">
                 <li id="nav_documentation"><a href="../v3">Documentation</a></li>
-                <li id="nav_blog"><a href="../../show_blog">Blog</a></li>
                 <li id="nav_contribute"><a href="../../contribute">Contribute</a></li>
                 <li id="nav_contact"><a href="../../contact">Contact</a></li>
                 <li id="nav_about"><a href="../../about">About</a></li>
+                <li id="nav_blog"><a href="../../show_blog">Blog</a></li>
               </ul>
             </nav>
           </div>
-          <p>
-            <br />
-          </p>
-          <div id="SiteName">Hangprinter v3 Manual</div>
-          <div id="MainContent">
-            <figure>
-              <a href="../v3"><img src="./media/logo-banner.png" alt="" /> </a>
-            </figure>
-            <xsl:for-each select="page/post">
-              <h3><xsl:attribute name="id" > <xsl:value-of select="./@id" /></xsl:attribute>
-                <a><xsl:attribute name="href">#<xsl:value-of select="./@id" /></xsl:attribute><xsl:value-of select="./@heading" /></a>
-              </h3>
-              <xsl:copy-of select="./*" />
-            </xsl:for-each>
+        </div>
+        <div id="about-container" class="container">
+          <div class="row">
+            <h3>Hangprinter v3 Manual</h3>
+            <div id="MainContent">
+              <figure>
+                <a href="../v3"><img src="./media/logo-banner.png" alt="" /> </a>
+              </figure>
+              <xsl:for-each select="page/post">
+                <h3><xsl:attribute name="id" > <xsl:value-of select="./@id" /></xsl:attribute>
+                  <a><xsl:attribute name="href">#<xsl:value-of select="./@id" /></xsl:attribute><xsl:value-of select="./@heading" /></a>
+                </h3>
+                <xsl:copy-of select="./*" />
+              </xsl:for-each>
+            </div>
           </div>
         </div>
       </div>
