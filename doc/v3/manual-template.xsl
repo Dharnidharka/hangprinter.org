@@ -8,8 +8,8 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <!--meta http-equiv="X-UA-Compatible" content="IE=edge" /-->
-  <!--meta name="viewport" content="width=device-width, initial-scale=1" /-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="Hangprinter v3 Manual" />
   <meta name="author" content="tobben and the Hangprinter Community" />
@@ -23,8 +23,23 @@
   <!-- Custom styles for this template -->
   <link href="https://hangprinter.org/css/cover.css" rel="stylesheet" />
   <link href="manual_style.css" rel="stylesheet" />
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="js/ie-emulation-modes-warning.js" />
+  <style>
+    .zero-padding{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    @media (min-width: 500px) {
+      #manual-container{
+        margin-top: 0px;
+        width: 600px;
+      }
+    }
+  </style>
+
   <meta name="keywords" content="Reprap, Manual, Hangprinter" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <link href="https://hangprinter.org/doc/v3/feed.xml" rel="alternate" type="application/rss+xml" title="Hangprinter v3 Manual" />
   <xsl:choose>
     <xsl:when test="page/@mathjax">
@@ -36,7 +51,6 @@
   <title>Hangprinter v3 Manual</title>
 </head>
 <body>
-<div id="preloader"></div>
 <div class="hero__image">
   <div class="site-wrapper">
     <div class="site-wrapper-inner">
@@ -59,20 +73,20 @@
             </nav>
           </div>
         </div>
-        <div id="about-container" class="container">
+        <div id="manual-container" class="container">
           <div class="row">
             <h3>Hangprinter v3 Manual</h3>
-            <div id="MainContent">
-              <figure>
-                <a href="../v3"><img src="./media/logo-banner.png" alt="" /> </a>
-              </figure>
-              <xsl:for-each select="page/post">
-                <h3><xsl:attribute name="id" > <xsl:value-of select="./@id" /></xsl:attribute>
-                  <a><xsl:attribute name="href">#<xsl:value-of select="./@id" /></xsl:attribute><xsl:value-of select="./@heading" /></a>
-                </h3>
+            <figure>
+              <a href="../v3"><img src="./media/logo-banner.png" alt="" /> </a>
+            </figure>
+            <xsl:for-each select="page/post">
+              <h3><xsl:attribute name="id" > <xsl:value-of select="./@id" /></xsl:attribute>
+                <a><xsl:attribute name="href">#<xsl:value-of select="./@id" /></xsl:attribute><xsl:value-of select="./@heading" /></a>
+              </h3>
+              <div class="zero-padding">
                 <xsl:copy-of select="./*" />
-              </xsl:for-each>
-            </div>
+              </div>
+            </xsl:for-each>
           </div>
         </div>
       </div>

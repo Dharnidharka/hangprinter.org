@@ -1,12 +1,3 @@
-.right {
-	width:255px;
-	font-size:11px;
-  text-align:right;
-  vertical-align:bottom;
-  position:absolute;
-  top:0;
-  right:0;
-}
 h1 {
 	color:#000000;
 	font-size:20px;
@@ -23,16 +14,21 @@ h3 a:link, h3 a:visited, h3 a:hover, h3 a:active {
   line-height: 100%;
   margin-bottom: 10px;
 }
-#MainContent {
+#row {
   max-width:600px;
   margin: 0 auto;
   color:#191A1D;
   padding:0px 10px 30px 10px;
   overflow-y: scroll;
 }
-#MainContent p, #MainContent ul {
+#row p, #row ul {
   text-align: left;
 }
 figure {
-  padding: 0px 0px 15px 0px;
+  padding: 0px 0px 35px 0px;
+}
+figcaption {
+  text-align: left;
+  margin: auto;
+  max-width: 500px;
 }
