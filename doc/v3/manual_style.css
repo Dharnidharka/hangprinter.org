@@ -21,7 +21,7 @@ h3 a:link, h3 a:visited, h3 a:hover, h3 a:active {
   padding:0px 10px 30px 10px;
   overflow-y: scroll;
 }
-#row p, #row ul {
+p, ul {
   text-align: left;
 }
 figure {
