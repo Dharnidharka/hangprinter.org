@@ -11,11 +11,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="Hangprinter v3 Manual" />
+  <meta name="description" content="Hangprinter v3 Assembly Manual" />
   <meta name="author" content="tobben and the Hangprinter Community" />
   <link rel="icon" href="https://hangprinter.org/favicon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" />
-  <title>Hangprinter</title>
+  <title>Hangprinter Assembly</title>
   <!-- Bootstrap core CSS -->
   <link href="https://hangprinter.org/css/bootstrap.min.css" rel="stylesheet" />
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -48,7 +48,6 @@
       </script>
     </xsl:when>
   </xsl:choose>
-  <title>Hangprinter v3 Manual</title>
 </head>
 <body>
 <div class="hero__image">
@@ -75,7 +74,7 @@
         </div>
         <div id="manual-container" class="container">
           <div class="row">
-            <h3>Hangprinter v3 Manual</h3>
+            <h3>Hangprinter v3 Assembly Manual</h3>
             <figure>
               <a href="../v3"><img src="./media/logo-banner.png" alt="" /> </a>
             </figure>

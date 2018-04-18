@@ -23,6 +23,8 @@ h3 a:link, h3 a:visited, h3 a:hover, h3 a:active {
 }
 p, ul {
   text-align: left;
+  margin: auto auto 20px auto;
+  max-width: 500px;
 }
 figure {
   padding: 0px 0px 35px 0px;
