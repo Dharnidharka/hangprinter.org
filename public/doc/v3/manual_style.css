@@ -1,0 +1,35 @@
+h1 {
+	color:#000000;
+	font-size:20px;
+	line-height: 100%;
+	margin-bottom: 0px;
+}
+h3 a:link, h3 a:visited, h3 a:hover, h3 a:active {
+  color: black;
+  text-decoration: none !important;
+}
+#date {
+  font: bold 50%;
+  color: rgb(110,110,110);
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+#row {
+  max-width:600px;
+  margin: 0 auto;
+  color:#191A1D;
+  padding:0px 10px 30px 10px;
+}
+p, ul {
+  text-align: left;
+  margin: auto auto 20px auto;
+  max-width: 500px;
+}
+figure {
+  padding: 0px 0px 35px 0px;
+}
+figcaption {
+  text-align: left;
+  margin: auto;
+  max-width: 500px;
+}
