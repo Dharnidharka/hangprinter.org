@@ -11,13 +11,12 @@ class RegisterController extends Controller
     public function showRegisterPage() {
 
       $users = DB::table('users')->get(['id', 'nick']);
-
       return view('register', compact('users'));
 
     }
 
     public function register(Request $request) {
-      //dd($request->all());
+
       $user = new User;
       $nick = $request->get('nick');
       $email = $request->get('email');
