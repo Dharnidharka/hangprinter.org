@@ -35,7 +35,7 @@ Route::get('documentation', function () {
     return view('documentation');
 });
 
-Route::get('graph-data', 'GraphController@showGraphData');
+Route::get('graph-data', ['uses' => 'GraphController@showGraphData']);
 
 Route::get('register', ['uses' => 'RegisterController@showRegisterPage']);
 
