@@ -36,4 +36,8 @@ class GraphController extends Controller
       return view('graph-data', compact('nodes', 'links'));
 
     }
+
+    public function showGraphData2() {
+      dd("Hello");
+    }
 }
