@@ -39,6 +39,10 @@ Route::get('graph-data', ['uses' => 'GraphController@showGraphData']);
 
 Route::get('graph-data-2', ['uses' => 'GraphController@showGraphData2']);
 
+Route::get('graph-data-3', function () {
+    return view('graph-data-3');
+});
+
 Route::get('register', ['uses' => 'RegisterController@showRegisterPage']);
 
 Route::post('register', ['uses' => 'RegisterController@register']);
